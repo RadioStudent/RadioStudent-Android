@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/rs_rumena"
+		    android:orientation="vertical"
+		    android:focusableInTouchMode="true"
+		    android:gravity="center_horizontal"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+		    tools:context=".MainScreen">
+
+		    <Button
+		        android:id="@+id/button1"
+		        android:layout_width="250dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_height="250dp"
+		        android:background="@drawable/logo_light" />
+
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:text="@string/play_text"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp">
+		    		
+			    <ImageView
+			        android:id="@+id/imageVolTriangle"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="15dp"
+			        android:src="@drawable/triangle_volume" />		        
+		        
+			    <SeekBar
+			        android:id="@+id/volumeControl1"
+			        android:layout_width="200dp"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="15dp"
+			        android:layout_marginLeft="15dp"
+			        android:progressDrawable="@drawable/crta_volume"
+			        android:thumb="@drawable/thumb_volume" />
+
+		    </LinearLayout>
+
+		
+		    <TextView
+		        android:id="@+id/textViewWeb"
+		        android:layout_width="wrap_content"
+		        android:layout_marginTop="50dp"
+		        android:visibility="invisible"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:text="@string/on_rs_www" />
+		
+		    <ListView
+		        android:id="@+id/feedListView"
+		        android:layout_width="fill_parent"
+		        android:scrollbars="none"
+		        android:divider="@drawable/list_divider"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:layout_height="480dp">
+		    </ListView>
+		    
+		    <TextView
+		        android:id="@+id/textViewBottom"
+		        android:layout_width="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content"
+		        android:fontFamily="courier"
+		        android:text="@string/more_info" />
+		            
+		</LinearLayout>  
+
+        <ProgressBar
+	        android:id="@+id/progb1"
+	        style="?android:attr/progressBarStyleLarge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="288dp"
+	        android:visibility="invisible" />
+          
+	</RelativeLayout>
+	
+</ScrollView>

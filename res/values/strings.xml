@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radio Študent Stream</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Touch me on!</string>
+    <string name="on_rs_www">Recently on RŠ www:</string>
+	<string name="no_network_subtitle">To stream radio please make sure internet connection is available</string>
+	<string name="no_network_title">No internet connection</string>
+	<string name="more_info">More info on: www.radiostudent.si</string>
+	<string name="play_text">Touch me on!</string>
+	<string name="pause_text">Don\'t touch me!</string>
+	<color name="rs_rumena">#fffff000</color>
+	<color name="rs_crna">#00000000</color>
+</resources>

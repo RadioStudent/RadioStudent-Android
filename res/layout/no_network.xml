@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rs_rumena"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainScreen" >
+
+    <TextView
+        android:id="@+id/textViewNoNetworkTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="courier"
+        android:gravity="center"
+        android:text="@string/no_network_title"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewNoNetworkSubtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="courier"
+        android:gravity="center"
+        android:text="@string/no_network_subtitle"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:layout_below="@+id/no_network_subtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/logo_light" />
+
+</RelativeLayout>
