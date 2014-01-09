@@ -39,11 +39,10 @@ public final class R {
         public static final int triangle_volume=0x7f02000b;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000e;
+        public static final int action_settings=0x7f09000d;
         public static final int button1=0x7f090001;
         public static final int feedListView=0x7f090006;
         public static final int imageVolTriangle=0x7f090003;
-        public static final int no_network_subtitle=0x7f09000d;
         public static final int progb1=0x7f090008;
         public static final int scrollView1=0x7f090000;
         public static final int subtitle=0x7f09000a;

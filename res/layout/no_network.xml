@@ -35,7 +35,7 @@
         android:id="@+id/button1"
         android:layout_width="116dp"
         android:layout_height="116dp"
-        android:layout_below="@+id/no_network_subtitle"
+        android:layout_below="@+id/textViewNoNetworkSubtitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="71dp"
         android:background="@drawable/logo_light" />

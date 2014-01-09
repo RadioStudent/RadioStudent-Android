@@ -13,6 +13,7 @@ public class RadioStreamService extends Service {
 	private int sdkVersion = android.os.Build.VERSION.SDK_INT;
     private MediaPlayer player;
     private final String RS_STREAM_URL = "http://kruljo.radiostudent.si:8000/hiq.m3u";
+    //private final String RS_STREAM_URL = "http://kruljo.radiostudent.si:8000/loq.m3u";
 	private final Context c = this;
 	final static String ACTION_PLAYING = "playing";
 	
@@ -29,7 +30,7 @@ public class RadioStreamService extends Service {
 	public void onDestroy() {
         //Toast.makeText(this, "My Service Stopped", Toast.LENGTH_LONG).show();
         //Log.d(TAG, "onDestroy");
-    	if(player.isPlaying()) {
+    	if(player != null && player.isPlaying()) {
     		player.stop();
     		player.release();
         }
@@ -91,7 +92,7 @@ public class RadioStreamService extends Service {
 			player.start();
         	Intent r1_intent = new Intent();
         	r1_intent.setAction(ACTION_PLAYING);
-        	r1_intent.putExtra("event", ACTION_PLAYING);	    	           
+        	r1_intent.putExtra("event", ACTION_PLAYING);
             sendBroadcast(r1_intent);
 		} catch (IllegalStateException e) {
 			e.printStackTrace();
