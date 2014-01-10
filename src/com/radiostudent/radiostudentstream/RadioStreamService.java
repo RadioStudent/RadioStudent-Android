@@ -18,7 +18,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.app.Service;
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
@@ -34,7 +33,6 @@ OnCompletionListener, OnPreparedListener {
     private int sdkVersion = android.os.Build.VERSION.SDK_INT;
     private final String RS_STREAM_URL = "http://kruljo.radiostudent.si:8000/hiq.m3u";
     //private final String RS_STREAM_URL = "http://kruljo.radiostudent.si:8000/loq.m3u";
-	private final Context c = this;
 	final static String ACTION_PLAYING = "playing";
 	
 	@Override
